@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料体験のお申し込み｜Nagomi Fit</title>
+<!-- ===== Favicon ===== -->
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon2.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon2.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#2D473C">
+
+<meta name="description" content="完全個室・完全予約制のパーソナルジム Nagomi Fit の無料体験お申し込みフォーム。体験は約60分、無理な勧誘はいたしません。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css2/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER（ロゴをクリックでLPへ戻る） ===== -->
+<header class="page-header">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="Nagomi Fit トップページへ">
+  <img src="img/logo-transparent.png" alt="Nagomi Fit｜Private Personal Gym">
+    </a>
+    <a class="back-link" href="index.html">
+      <span class="arw">←</span>トップページへ戻る
+    </a>
+  </div>
+</header>
+
+<!-- ===== CONTACT / TRIAL FORM ===== -->
+<section class="contact" id="contact">
+  <div class="arc arc-f"></div>
+  <div class="wrap contact-grid">
+    <div class="contact-intro reveal">
+      <span class="eyebrow">Free Trial</span>
+      <h2 class="sec-title">無料体験のお申し込み</h2>
+      <p class="lead">下記フォームよりお気軽にお申し込みください。内容を確認のうえ、担当より折り返しご連絡いたします。</p>
+      <ul class="trial-points">
+        <li><span class="chk">✓</span><span><b>体験は約60分</b>／カウンセリング＋かんたんな体験トレーニング</span></li>
+        <li><span class="chk">✓</span><span><b>動きやすい服装だけ</b>でOK（シューズ・お飲み物があると安心です）</span></li>
+        <li><span class="chk">✓</span><span><b>体験当日のご入会で入会金半額</b>（15,000円 → 7,500円）</span></li>
+        <li><span class="chk">✓</span><span>無理な勧誘はいたしません。まずは雰囲気を見にきてください</span></li>
+      </ul>
+      <div class="contact-alt">
+        お電話でのお問い合わせ
+        <b>000-0000-0000</b>
+        受付 平日 10:00–19:00／土日祝 9:00–17:00（月曜定休）
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="trialForm" novalidate>
+      <div id="formFields">
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">お名前<span class="req">必須</span></label>
+            <input type="text" id="f-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-kana">ふりがな<span class="opt">任意</span></label>
+            <input type="text" id="f-kana" name="kana">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-email">メールアドレス<span class="req">必須</span></label>
+            <input type="email" id="f-email" name="email" autocomplete="email" required placeholder="example@mail.com">
+          </div>
+          <div class="field">
+            <label for="f-tel">電話番号<span class="req">必須</span></label>
+            <input type="tel" id="f-tel" name="tel" autocomplete="tel" required placeholder="09000000000">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-plan">ご希望のプラン<span class="opt">任意</span></label>
+            <select id="f-plan" name="plan">
+              <option value="">選択してください</option>
+              <option value="都度払い">都度払い（1回 7,000円）</option>
+              <option value="月額制">月額制（月4回 26,000円）</option>
+              <option value="短期集中コース">短期集中コース（2ヶ月 98,000円）</option>
+              <option value="まだ決めていない">まだ決めていない・相談したい</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-time">ご希望の時間帯<span class="opt">任意</span></label>
+            <select id="f-time" name="time">
+              <option value="">選択してください</option>
+              <option value="平日午前">平日 午前（比較的空いています）</option>
+              <option value="平日午後">平日 午後（比較的空いています）</option>
+              <option value="平日夜">平日 夜</option>
+              <option value="土日祝">土日祝</option>
+              <option value="相談したい">相談して決めたい</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-exp">運動の経験<span class="opt">任意</span></label>
+          <select id="f-exp" name="experience">
+            <option value="">選択してください</option>
+            <option value="ほぼ初めて">運動はほぼ初めて／久しぶり</option>
+            <option value="少しある">少し経験がある</option>
+            <option value="経験者">運動・トレーニング経験者</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="f-msg">ご質問・ご要望<span class="opt">任意</span></label>
+          <textarea id="f-msg" name="message" placeholder="気になっていることがあれば、お気軽にご記入ください。"></textarea>
+        </div>
+        <label class="consent">
+          <input type="checkbox" id="f-consent" name="consent" required>
+          <span><a href="#" onclick="return false;">プライバシーポリシー</a>に同意のうえ送信します<span class="req">必須</span></span>
+        </label>
+        <button type="submit" class="btn">この内容で申し込む<span class="arw">→</span></button>
+        <p class="form-note">※ 送信後、担当より2営業日以内にご連絡いたします。</p>
+      </div>
+
+      <div class="form-success" id="formSuccess" hidden>
+        <div class="ic">✓</div>
+        <h3>お申し込みありがとうございます</h3>
+        <p>担当より折り返しご連絡いたします。<br>今しばらくお待ちくださいませ。</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER（簡易版） ===== -->
+<footer class="page-footer">
+  <div class="wrap foot-inner">
+    <a href="index.html" class="foot-home">Nagomi Fit トップページへ</a>
+    <span>© 2025 Nagomi Fit. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+  // ① LPの料金ボタンから渡された ?plan= を受け取って、プラン欄を初期選択
+  const planParam = new URLSearchParams(location.search).get('plan');
+  if (planParam) {
+    const planSelect = document.getElementById('f-plan');
+    if (planSelect && [...planSelect.options].some(o => o.value === planParam)) {
+      planSelect.value = planParam;
+    }
+  }
+
+  // ② 送信時のバリデーション＋サンクスメッセージ表示（フロントエンドのみ）
+  const form = document.getElementById('trialForm');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      document.getElementById('formFields').hidden = true;
+      const ok = document.getElementById('formSuccess');
+      ok.hidden = false;
+      ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }
+</script>
+
+</body>
+</html>
