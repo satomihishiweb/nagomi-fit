@@ -15,6 +15,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css2/style.css">
+
+<!-- ===== JavaScript（外部ファイル・defer でDOM構築後に実行） ===== -->
+<script src="js/trial.js" defer></script>
 </head>
 <body>
 
@@ -111,7 +114,7 @@
         </div>
         <label class="consent">
           <input type="checkbox" id="f-consent" name="consent" required>
-          <span><a href="#" onclick="return false;">プライバシーポリシー</a>に同意のうえ送信します<span class="req">必須</span></span>
+          <span><a href="#" class="js-dummy-link">プライバシーポリシー</a>に同意のうえ送信します<span class="req">必須</span></span>
         </label>
         <button type="submit" class="btn">この内容で申し込む<span class="arw">→</span></button>
         <p class="form-note">※ 送信後、担当より2営業日以内にご連絡いたします。</p>
@@ -133,30 +136,6 @@
     <span>© 2025 Nagomi Fit. All rights reserved.</span>
   </div>
 </footer>
-
-<script>
-  // ① LPの料金ボタンから渡された ?plan= を受け取って、プラン欄を初期選択
-  const planParam = new URLSearchParams(location.search).get('plan');
-  if (planParam) {
-    const planSelect = document.getElementById('f-plan');
-    if (planSelect && [...planSelect.options].some(o => o.value === planParam)) {
-      planSelect.value = planParam;
-    }
-  }
-
-  // ② 送信時のバリデーション＋サンクスメッセージ表示（フロントエンドのみ）
-  const form = document.getElementById('trialForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      document.getElementById('formFields').hidden = true;
-      const ok = document.getElementById('formSuccess');
-      ok.hidden = false;
-      ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
-  }
-</script>
 
 </body>
 </html>
